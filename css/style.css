@@ -8,6 +8,13 @@ body {
     background: radial-gradient(circle, rgba(255, 250, 221, 1) 68%, rgba(221, 214, 236, 1) 89%);
 }
 
+@media (max-width: 990px) {
+    body.lock {
+        overflow: hidden;
+    }
+}
+
+
 .wrapper {
     margin: 0 auto;
     /* max-width: 320px; */
@@ -169,6 +176,7 @@ body {
         background-color: #C6BED8;
         padding: 70px 10px 20px 10px;
         transition: .5s ease-in-out;
+        overflow: auto;
     }
 
     .header__menu.active {
