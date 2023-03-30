@@ -4,7 +4,6 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    /* background-color: #FFFADD; */
     background: radial-gradient(circle, rgba(255, 250, 221, 1) 68%, rgba(221, 214, 236, 1) 89%);
 }
 
@@ -91,7 +90,7 @@ body {
 @media (max-width: 990px) {
     .header__logo-image {
         display: block;
-        max-width: 60%;
+        max-width: 45%;
     }
 }
 
@@ -99,7 +98,7 @@ body {
     .header__logo-mobile {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-top: 70px;
     }
 }
@@ -257,10 +256,11 @@ body {
 }
 
 .header__title {
+    text-align: left;
     color: #563E8C;
     padding: 10px 0px 0px 0px;
     text-align: center;
-    font-size: 48px;
+    font-size: 36px;
 }
 
 
@@ -277,16 +277,16 @@ body {
     .welcome-container {
         display: flex;
         margin: 0px 20px 50px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: center;
         height: 100vh;
     }
 }
 
 
 @media (max-width: 990px) {
-    .content {
+    .welcome__header {
         padding-top: 70px;
     }
 }
