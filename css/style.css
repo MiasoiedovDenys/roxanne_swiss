@@ -286,10 +286,57 @@ body {
 
 
 @media (max-width: 990px) {
-    .welcome__header {
-        padding-top: 70px;
+    .container {
+        padding: 0px 20px;
+        min-height: 100vh;
+    }
+
+    .content {
+        text-align: justify;
+    }
+
+    .section-title {
+        padding: 70px 0px 20px;
+        text-align: center;
+    }
+
+    .kinesiology {
+        color: rgb(127, 0, 127);
+    }
+
+    .drainage {
+        color: rgb(63, 127, 0);
+    }
+
+    .formations {
+        color: rgb(229, 112, 2);
+    }
+
+    .infos {
+        color: rgb(255, 0, 127);
+    }
+
+    .image-container {
+        max-width: 60%;
+        margin: 0px auto;
+        padding-bottom: 10px;
+    }
+
+    .section-subheading {
+        text-align: center;
+        padding: 20px 0px 10px;
+    }
+
+    .price {
+        padding: 5px 0px 10px;
     }
 }
+
+h4 {
+    padding: 5px 0px 5px;
+    text-decoration: underline;
+}
+
 
 
 
