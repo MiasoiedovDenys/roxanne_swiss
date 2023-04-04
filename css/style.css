@@ -1,5 +1,7 @@
-#hidden {
-    display: none;
+@media (max-width: 990px) {
+    .hidden {
+        display: none;
+    }
 }
 
 body {
@@ -281,8 +283,9 @@ body {
     }
 
     .section-title {
+        font-size: calc(24px + 6 * (100vw / 1280));
         text-transform: uppercase;
-        padding: 70px 0px 20px;
+        padding: 60px 0px 20px;
         text-align: center;
     }
 
@@ -309,21 +312,28 @@ body {
     }
 
     .section-subheading {
+        font-size: calc(20px + 6 * (100vw / 1280));
         text-align: center;
         padding: 20px 0px 10px;
     }
 
     .section-paragraph {
-        font-size: calc(14px + 6 * (100vw / 1280));
+        font-size: calc(16px + 6 * (100vw / 1280));
     }
 
     .price {
         padding: 5px 0px 10px;
     }
 
+    .monogramm {
+        max-width: 50%;
+        margin: 0px auto;
+        padding-top: 10px;
+    }
+
     .contacts__subheading {
         padding: 10px 0px;
-        font-size: calc(19px + 6 * (100vw / 1280));
+        font-size: calc(20px + 6 * (100vw / 1280));
         font-weight: bold;
     }
 
@@ -335,6 +345,7 @@ body {
     }
 
     .contacts__address-city {
+        font-size: calc(18px + 6 * (100vw / 1280));
         text-decoration: underline;
         padding-bottom: 5px;
         /* text-align: center; */
@@ -342,6 +353,7 @@ body {
 
     .contacts__address {
         padding: 10px 0px 15px;
+        font-size: calc(16px + 6 * (100vw / 1280));
     }
 
     .contacts__map {
@@ -355,6 +367,7 @@ body {
 }
 
 h4 {
+    font-size: calc(18px + 6 * (100vw / 1280));
     padding: 5px 0px 5px;
     text-decoration: underline;
 }
@@ -373,5 +386,5 @@ h4 {
 
 .footer__logo {
     padding: 10px;
-    width: 30%;
+    width: 25%;
 }
