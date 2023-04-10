@@ -11,12 +11,11 @@ body {
     background: radial-gradient(circle, rgba(255, 250, 221, 1) 68%, rgba(221, 214, 236, 1) 89%);
 }
 
-@media (max-width: 990px) {
+@media (max-width: 990px) and (orientation: landscape) {
     body.lock {
         overflow: hidden;
     }
 }
-
 
 
 @media (max-width: 990px) {
@@ -382,6 +381,14 @@ body {
 
     .contacts__map-image {
         max-width: 100%;
+    }
+
+    .contacts__logo {
+        max-width: 30%;
+    }
+
+    .contacts__logo:nth-child(2n) {
+        margin-bottom: 20px;
     }
 }
 
