@@ -4,11 +4,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .header__list {
-        max-width: 100%;
-    }
-}
+
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -238,7 +234,7 @@ body {
     padding: 0px 14px;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 990px) and (orientation: landscape) {
     .header__link {
         margin: 0px 0px 20px 0px;
     }
@@ -331,7 +327,7 @@ body {
         padding: 5px 0px 10px;
     }
 
-    .monogramm {
+    .monogram {
         max-width: 50%;
         margin: 0px auto;
         padding-top: 10px;
