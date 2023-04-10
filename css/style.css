@@ -323,14 +323,31 @@ body {
         font-size: calc(16px + 6 * (100vw / 1280));
     }
 
+    .section-paragraph-ul-subheading {
+        padding-top: 15px;
+        font-weight: bold;
+    }
+
+    .section-block-list {
+        padding: 10px 0px 10px 10px;
+        font-size: calc(15px + 6 * (100vw / 1280));
+
+    }
+
+    .section-block-list li {
+        list-style-type: square;
+        margin-left: 10px;
+
+    }
+
     .price {
         padding: 5px 0px 10px;
     }
 
     .monogram {
-        max-width: 50%;
+        max-width: 85%;
         margin: 0px auto;
-        padding-top: 10px;
+        padding-top: 15px;
     }
 
     .contacts__subheading {
