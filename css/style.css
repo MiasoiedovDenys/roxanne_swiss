@@ -12,7 +12,7 @@ body {
 }
 
 @media (max-width: 1200px) and (orientation: landscape) {
-    body.lock {
+    .wrapper.lock {
         overflow: hidden;
     }
 }
