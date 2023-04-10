@@ -13,7 +13,7 @@ body {
 
 @media (max-width: 990px) {
     body.lock {
-        /* overflow: hidden; */
+        overflow: hidden;
     }
 }
 
