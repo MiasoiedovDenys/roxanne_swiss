@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background: radial-gradient(circle, rgba(255, 250, 221, 1) 68%, rgba(221, 214, 236, 1) 89%);
+
+    /* background: radial-gradient(circle, rgba(255, 250, 221, 1) 68%, rgba(221, 214, 236, 1) 89%); */
 }
 
 @media (max-width:990px) {
@@ -16,13 +17,13 @@ body {
 }
 
 .wrapper {
-    max-width: 1280px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
 @media (max-width: 990px) {
     .wrapper {
-        max-width: 860px;
+        /* max-width: 860px; */
         /* display: flex; */
         /* flex-direction: column; */
         /* margin: 0 auto; */
@@ -32,7 +33,7 @@ body {
 }
 
 .header__container {
-    max-width: 1280px;
+    max-width: 1400px;
     padding: 0px 20px;
     margin: 0px auto;
 }
@@ -85,21 +86,34 @@ body {
 
 .header__logo-image {
     display: block;
-    max-width: 40%;
+    max-width: 60%;
+    /* transform: scale(1.2); */
+    transition-delay: 0s, 0s, 2s;
     transition: cubic-bezier(0.4, 0, 1, 1) 1.5s;
-    overflow: hidden;
-    /* display: none; */
+    /*overflow: hidden;
+    */
+    /*display: none;
+    */
 }
 
 .header__logo-image:hover {
-    transform: scale(1.4);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
 
 
 
 @media (max-width: 990px) {
     .header__logo-image {
-        max-width: 60%;
+        /* max-width: 60%; */
+        transition: none;
+    }
+
+    .header__logo-image:hover {
+        transform: none;
     }
 }
 
@@ -130,19 +144,17 @@ body {
 */
 
 .header__logo-mobile-container {
-    width: 100%;
+    width: 50%;
     padding-top: 60px;
     display: flex;
     justify-content: center;
 }
 
-/* @media (max-width: 990px) {
+@media (max-width: 990px) {
     .header__logo-mobile-container {
-        padding-top: 60px; 
-         display: flex; 
-        justify-content: center; 
+        width: 100%;
     }
-}  */
+}
 
 .header__burger {
     display: none;
@@ -263,7 +275,7 @@ body {
 }
 
 .header__link {
-    padding: 0px 14px;
+    padding: 0px 25px;
 }
 
 @media (max-width: 990px) {
@@ -273,12 +285,31 @@ body {
 }
 
 .header__link-menu {
-    margin-left: 24px;
+    /* margin-left: 24px; */
     color: #563E8C;
     font-size: calc(10px + 6 * (100vw / 1280));
     text-transform: uppercase;
     text-decoration: none;
 }
+
+
+
+.header__link:hover {
+    text-shadow: 1px 2px 3px;
+    /*font-weight: bold;
+    */
+    /*color: #563E8C;
+    */
+    /* text-decoration: underline; */
+    transition: .3s linear;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+}
+
+
+
 
 @media (max-width: 990px) {
     .header__link-menu {
@@ -310,12 +341,147 @@ body {
     }
 } */
 
-@media (max-width: 990px) {
-    .container {
-        padding: 0px 20px;
-        /* min-height: 100vh; */
-    }
+.container {
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 0px 20px;
+}
 
+.section-title {
+    font-size: calc(26px + 6 * (100vw / 1280));
+    text-transform: uppercase;
+    padding: 80px 0px 20px;
+    text-align: center;
+}
+
+.kinesiology {
+    color: #7f007f;
+}
+
+.drainage {
+    color: #3f7f00;
+}
+
+.formations {
+    color: #e57002;
+}
+
+.infos {
+    color: #ff007f;
+}
+
+.section__item-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.image-container {
+    min-width: 50%;
+    padding: 15px;
+}
+
+.image-container.therapist {
+    min-width: auto;
+    padding-right: 30px;
+}
+
+/* .therapist img {
+    max-width: 60%;
+} */
+
+.section-subheading {
+    font-size: calc(22px + 6 * (100vw / 1280));
+    text-align: center;
+    padding: 5px 0px;
+}
+
+
+.section-paragraph {
+    font-size: calc(16px + 6 * (100vw / 1280));
+}
+
+.section-paragraph-ul-subheading {
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.price {
+    padding: 5px 0px 10px;
+}
+
+.section-monogram {
+    max-width: 50%;
+    margin: 0px auto;
+}
+
+.section-block-list {
+    padding: 10px 0px 10px 10px;
+    font-size: calc(15px + 6 * (100vw / 1280));
+
+}
+
+.section-block-list li {
+    list-style-type: square;
+    margin-left: 10px;
+
+}
+
+.section__item-flex.contacts {
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.contacts__subheading-flex {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+
+.contacts__subheading {
+    padding: 10px 0px;
+    font-size: calc(20px + 6 * (100vw / 1280));
+    font-weight: bold;
+}
+
+
+
+
+.contacts__subheading a {
+    font-weight: 400;
+    text-decoration: none;
+    color: #0000ff;
+    font-size: calc(18px + 6 * (100vw / 1280));
+}
+
+.contacts__address-city {
+    font-size: calc(20px + 6 * (100vw / 1280));
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
+.contacts__address {
+    padding: 10px 0px 15px;
+    font-size: calc(18px + 6 * (100vw / 1280));
+}
+
+.contacts__logo-flex {
+    /* max-width: 50%; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contacts__logo {
+    max-width: 15%;
+}
+
+
+@media (max-width: 990px) {
     .content {
         margin-bottom: 30px;
         text-align: left;
@@ -323,47 +489,38 @@ body {
 
     .section-title {
         font-size: calc(24px + 6 * (100vw / 1280));
-        text-transform: uppercase;
         padding: 60px 0px 20px;
-        text-align: center;
     }
 
-    .kinesiology {
-        color: #7f007f;
-    }
-
-    .drainage {
-        color: #3f7f00;
-    }
-
-    .formations {
-        color: #e57002;
-    }
-
-    .infos {
-        color: #ff007f;
+    .section__item-flex {
+        display: block;
     }
 
     .image-container {
         max-width: 60%;
+        padding: 0px;
         margin: 0px auto;
-        padding-bottom: 15px;
+        /* padding-bottom: 15px; */
+    }
+
+    .image-container.therapist {
+        padding-right: 0px;
     }
 
     .section-subheading {
         font-size: calc(20px + 6 * (100vw / 1280));
-        text-align: center;
-        padding: 20px 0px 10px;
+        /* text-align: center;
+        padding: 20px 0px 10px; */
     }
 
-    .section-paragraph {
+    /* .section-paragraph {
         font-size: calc(16px + 6 * (100vw / 1280));
-    }
+    } */
 
-    .section-paragraph-ul-subheading {
+    /* .section-paragraph-ul-subheading {
         padding-top: 15px;
         font-weight: bold;
-    }
+    } */
 
     .section-block-list {
         padding: 10px 0px 10px 10px;
@@ -371,46 +528,54 @@ body {
 
     }
 
-    .section-block-list li {
+    /* .section-block-list li {
         list-style-type: square;
         margin-left: 10px;
 
-    }
+    } */
 
-    .price {
+    /* .section-paragraph-price {
         padding: 5px 0px 10px;
-    }
+    } */
 
-    .monogram {
+    /* .section-monogram {
         max-width: 85%;
-        margin: 0px auto;
         padding-top: 15px;
-    }
+    } */
 
-    .contacts__subheading {
+    /* .contacts__subheading {
         padding: 10px 0px;
         font-size: calc(20px + 6 * (100vw / 1280));
         font-weight: bold;
+    } */
+
+    .contacts__subheading-flex {
+        max-width: 100%;
     }
 
+
+
+
     .contacts__subheading a {
-        font-weight: 400;
-        text-decoration: none;
-        color: #0000ff;
         font-size: calc(16px + 6 * (100vw / 1280));
     }
 
     .contacts__address-city {
         font-size: calc(18px + 6 * (100vw / 1280));
-        text-decoration: underline;
-        padding-bottom: 5px;
+        /* text-decoration: underline;
+        padding-bottom: 5px; */
         /* text-align: center; */
     }
 
     .contacts__address {
-        padding: 10px 0px 15px;
         font-size: calc(16px + 6 * (100vw / 1280));
     }
+
+    .contacts__logo-flex {
+        flex-direction: column;
+    }
+
+
 
     .contacts__map {
         text-align: center;
@@ -422,12 +587,15 @@ body {
     }
 
     .contacts__logo {
-        max-width: 30%;
+        display: flex;
+        align-items: center;
+        flex-basis: 10vh;
     }
 
-    .contacts__logo:nth-child(2n) {
+
+    /* .contacts__logo:nth-child(2n) {
         margin-bottom: 20px;
-    }
+    } */
 }
 
 h4 {
@@ -436,6 +604,18 @@ h4 {
     text-decoration: underline;
 }
 
+
+.footer_block {
+    /* max-width: 100%; */
+    text-align: center;
+    background: linear-gradient(rgba(221, 214, 236, 1) 1%, rgba(255, 250, 221, 1) 87%);
+}
+
+.footer__logo {
+    max-height: 15vh;
+    padding: 10px;
+    width: 25%;
+}
 
 @media (max-width: 990px) {
 
